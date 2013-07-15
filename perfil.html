@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Projeto IHM</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="index.html">TranSoluções</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html">Início</a></li>
+              <li class="active"><a href="perfil.html">Perfil</a></li>
+            </ul>
+          </div><!--end nav-collapse -->
+        </div>
+      </div>
+    </div>
+      <div class="container-fluid">
+    
+      <h1>Perfil</h1>
+      
+      
+     <form class="form-horizontal" action="index.html" autocomplete="off">
+     
+     <div class="control-group">
+    <label class="control-label" for="usuario">Usuário:</label>
+    <div class="controls">
+      <input type="text" id="usuario" class="input-large" value="Usuário" disabled>
+      <a href="#" class="spaced">Quero mudar minha senha</a>
+    </div>
+  </div>
+     
+  <div class="control-group">
+    <label class="control-label" for="estado">Meu estado:</label>
+    <div class="controls">
+      <select id="estado" class="input-large">
+      		<option value="" disabled selected>Selecione seu estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AM">Amazonas</option>
+            <option value="AP">Amapá</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espirito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="PR">Paraná</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SE">Sergipe</option>
+            <option value="SP">São Paulo</option>
+            <option value="TO">Tocantins</option>
+        </select>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="cidade">Minha cidade:</label>
+    <div class="controls">
+      <select id="cidade" class="input-large">
+      		<option disabled selected>Selecione sua cidade</option>
+            <option>Cidade 1</option>
+            <option>Cidade 2</option>
+            <option>Etc</option>
+        </select>
+    </div>
+  </div>
+  
+  <br>
+  
+  <div class="control-group">
+    <div class="controls">
+    	<button type="submit" class="btn btn-success">Salvar</button>
+    </div>
+  </div>
+</form>
+</div>
+    </body>
+</html>
