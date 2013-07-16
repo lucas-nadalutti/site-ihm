@@ -13,90 +13,119 @@
         <div class="container-fluid">
           <a class="brand" href="index.html">TranSoluções</a>
           <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="index.html">Início</a></li>
-              <li><a href="perfil.html">Perfil</a></li>
-            </ul>
-          </div><!--end nav-collapse -->
+            <div class="navbar-text pull-right">
+              <form id="login-form" class="form-inline" action="minhas-linhas.html" autocomplete="off">
+              	<a class="white spaced" href="#">Esqueci minha senha</a>
+                  <input class="input-small" type="text" placeholder="Login" required> 
+                  <input class="input-small" type="password" placeholder="Senha" required>
+                  <button type="submit" class="btn btn-default btn-small">Login</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
      <div class="container-fluid">
-     
-     <div class="row-fluid">   
-  <div class="span12">
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>Linha</th>
-          <th>Companhia</th>
-          <th>Veículos transitando</th>
-          <th>Visualizar</th>
-          <th>Remover</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>32</td>
-          <td>Miramar</td>
-          <td>12</td>
-          <td>
-          	<a class="btn btn-info" href="linha.html"><i class="icon-eye-open icon-white"></i></a>
-          </td>
-          <td>
-          	<a class="btn btn-danger" href="#"><i class="icon-trash icon-white"></i></a>
-          </td>
-        </tr>
-        <tr>
-          <td>33</td>
-          <td>Miramar</td>
-          <td>10</td>
-          <td>
-          	<a class="btn btn-info" href="linha.html"><i class="icon-eye-open icon-white"></i></a>
-          </td>
-          <td>
-          	<a class="btn btn-danger" href="#"><i class="icon-trash icon-white"></i></a>
-          </td>
-        </tr>
-        <tr>
-          <td>49</td>
-          <td>Fonseca</td>
-          <td>20</td>
-          <td>
-          	<a class="btn btn-info" href="linha.html"><i class="icon-eye-open icon-white"></i></a>
-          </td>
-          <td>
-          	<a class="btn btn-danger" href="#"><i class="icon-trash icon-white"></i></a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    
-    <br />
-    
-    <div class="text-center">
-        <form class="form-inline">
-            <select class="input-mini">
-                <option>17</option>
-                <option>35</option>
-                <option>41</option>
-                <option>47</option>
-                <option>49</option>
-                <option>53</option>
-                <option>57</option>
-            </select>
-            <button type="button" class="btn btn-success">Adicionar Linha de Interesse</button>
-        </form>
-        
 
-        
-        Mostrando linhas da cidade: <strong>Niterói, RJ</strong>
-        <br />
-        Não é sua cidade? Corrija em seu <strong><a href="perfil.html">Perfil</a></strong>
+      <div class="row-fluid">   
+  <div class="span12">
+  <div class="span6">
+  	<h1>Sobre</h1>
+    <div class="span6">
+    	<p>Trabalho realizado como projeto final da disciplina Interface Homem-Máquina, ministrada pela professora Daniela Trevisan no semestre 2013.1.</p>
+        <p>
+        	<strong>Autores:</strong><br/>
+            Anderson Araujo<br/>
+            Lucas Nadalutti<br/>
+            Pedro Yusim<br/>
+            Roberto Sampaio<br/>
+            Thayanne Viegas
+        </p>
     </div>
-  </div><!--end span-->
-</div><!--end row--> 
+    <div class="span5">
+    	<img src="img/onibus.jpg" alt="Ônibus" class="img-rounded"/>
+    </div>
+  </div>
+  <div class="span6">
+  <h1>Cadastre-se</h1>
+  
+     <form class="form-horizontal" action="sucesso-cadastro.html" autocomplete="off">
      
-     </div>
+     <div class="control-group">
+    <label class="control-label" for="estado">Meu estado:</label>
+    <div class="controls">
+      <select id="estado" class="input-large">
+      		<option value="" disabled selected>Selecione seu estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AM">Amazonas</option>
+            <option value="AP">Amapá</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espirito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="PR">Paraná</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SE">Sergipe</option>
+            <option value="SP">São Paulo</option>
+            <option value="TO">Tocantins</option>
+        </select>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="cidade">Minha cidade:</label>
+    <div class="controls">
+      <select id="cidade" class="input-large">
+      		<option disabled selected>Selecione sua cidade</option>
+            <option>Cidade 1</option>
+            <option>Cidade 2</option>
+            <option>Etc</option>
+        </select>
+    </div>
+  </div>
+  
+  <br>
+     
+  <div class="control-group">
+    <label class="control-label" for="usuario">Usuário:</label>
+    <div class="controls">
+      <input type="text" id="usuario" placeholder="Insira o login" required>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="senha">Senha:</label>
+    <div class="controls">
+      <input type="password" id="senha" placeholder="Insira sua senha" required>
+    </div>
+  </div>
+  
+  <br>
+  
+  <div class="control-group">
+    <div class="controls">
+    	<button type="submit" class="btn btn-success">Cadastrar</button>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+</div>
+</div>
     </body>
 </html>
