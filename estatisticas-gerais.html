@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Projeto IHM</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+
+    <script>
+	
+        $(function () {
+        $('#container').highcharts({
+            title: {
+                text: 'Tempo médio de espera em Niterói, RJ',
+                x: -20 //center
+            },
+            subtitle: {
+                text: 'Intervalo médio entre a chegada de um ônibus e outro no ponto final',
+                x: -20
+            },
+            xAxis: {
+                categories: ['6:00-8:00', '8:00-10:00', '10:00-12:00', '12:00-14:00',
+					'14:00-16:00', '16:00-18:00', '18:00-20:00', '20:00-22:00', '22:00-24:00']
+            },
+            yAxis: {
+                title: {
+                    text: 'Tempo médio de espera (min)'
+                },
+                plotLines: [{
+                    value: 20,
+                    width: 1,
+                    color: '#808080'
+                }],
+            },
+            tooltip: {
+                valueSuffix: ' minutos'
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+                borderWidth: 0
+            },
+            series: [{
+                name: '32',
+                data: [10, 7, 8, 14, 20, 30, 35, 16, 10]
+            }, {
+                name: '33',
+                data: [12, 5, 13, 19, 15, 23, 29, 32, 21]
+            }, {
+                name: '47',
+                data: [25, 10, 8, 10, 12, 15, 46, 23, 9]
+            }, {
+                name: '53',
+                data: [8, 17, 12, 15, 19, 25, 39, 33, 17]
+            }]
+        });
+    });
+    
+
+    
+	</script>
+        
+    </head>
+    
+    <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="administracao.html">TranSoluções</a>
+          <div class="nav-collapse collapse">
+          <div class="navbar-text pull-right">
+              	<a class="white spaced" href="index.html">Sair</a>
+            </div>
+            <ul class="nav">
+              <li><a href="administracao.html">Administração</a></li>
+              <li class="active"><a href="estatisticas-gerais.html">Estatisticas Gerais</a></li>
+            </ul>
+          </div><!--end nav-collapse -->
+        </div>
+      </div>
+    </div>
+     <div class="container-fluid">
+     
+     <h1>Estatísticas Gerais de: Niterói, RJ</h1>
+     
+     <div class="row-fluid">   
+  <div class="span12">
+
+<div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+
+<br/>
+    <div align="center">
+    	<a class="btn btn-inverse" href="administracao.html">Voltar</a>
+    </div>
+    
+  </div><!--end span-->
+</div><!--end row--> 
+     
+     </div>
+    </body>
+    
+</html>

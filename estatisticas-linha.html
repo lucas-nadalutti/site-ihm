@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Projeto IHM</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+
+    <script>
+	
+$(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Tempo médio de espera por veículos da Linha X'
+            },
+            subtitle: {
+                text: 'Intervalo médio entre a chegada de um ônibus e outro no ponto final'
+            },
+            xAxis: {
+                categories: ['6:00-8:00', '8:00-10:00', '10:00-12:00', '12:00-14:00',
+					'14:00-16:00', '16:00-18:00', '18:00-20:00', '20:00-22:00', '22:00-24:00']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Tempo médio de espera (min)'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0"></td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} minutos</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                name: '32',
+                data: [15, 9, 7, 17, 20, 30, 35, 27, 10]
+            }]
+        });
+    });
+    
+	</script>
+        
+    </head>
+    
+    <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="brand" href="administracao.html">TranSoluções</a>
+          <div class="nav-collapse collapse">
+          <div class="navbar-text pull-right">
+              	<a class="white spaced" href="index.html">Sair</a>
+            </div>
+            <ul class="nav">
+              <li><a href="administracao.html">Administração</a></li>
+              <li><a href="estatisticas-gerais.html">Estatisticas Gerais</a></li>
+            </ul>
+          </div><!--end nav-collapse -->
+        </div>
+      </div>
+    </div>
+     <div class="container-fluid">
+     
+     <h1>Estatísticas da Linha X</h1>
+     
+     <div class="row-fluid">   
+  <div class="span12">
+
+<div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+
+<br/>
+    <div align="center">
+    	<a class="btn btn-inverse" href="administracao.html">Voltar</a>
+    </div>
+    
+  </div><!--end span-->
+</div><!--end row--> 
+     
+     </div>
+    </body>
+    
+</html>
