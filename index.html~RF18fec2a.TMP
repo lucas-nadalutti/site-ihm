@@ -46,7 +46,7 @@
             Thayanne Viegas
         </p>-->
     </div>
-    <div class="span5 pull-down">
+    <div style="margin-top:70px;" class="span5">
     	<img src="img/onibus.jpg" alt="Ônibus" class="img-rounded"/>
     </div>
   </div>

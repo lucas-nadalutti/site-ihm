@@ -26,12 +26,8 @@ p.success {
 	text-align: center;
 }
 
-label.blue-text {
-	background-color:#00F;	
-}
-
-div.pull-down {
-	margin-top:60px;	
+div.pull-up {
+	marginTop:-20px;	
 }
 
 #login-form {
