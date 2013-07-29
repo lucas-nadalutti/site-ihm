@@ -26,6 +26,11 @@ p.success {
 	text-align: center;
 }
 
+p.subtitle {
+	font-size:11px;
+	margin-left:120px;	
+}
+
 label.blue-text {
 	background-color:#00F;	
 }
